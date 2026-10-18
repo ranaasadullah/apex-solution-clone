@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Apex Solutions designs and builds websites, apps and brands for growing businesses.">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        try { 
+            let t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = t; 
+            } catch (e) 
+            { }
+    </script>
+    <title>Apex Solutions | Web & App Development</title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="wrap navbar">
+            <a class="logo" href="index.html">APEX<b>.</b></a>
+            <nav id="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <button class="sm-btn" id="theme" aria-label="Toggle dark mode"></button>
+                <button class="sm-btn" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero wrap">
+            <h1>We build<br><span id="typed"></span><span class="msg"></span></h1>
+            <p>Apex Solutions designs and ships fast, accessible digital products for growing businesses.</p><a
+                class="btn" href="contact.html">Start a project</a><a class="btn alt" href="portfolio.html">See our
+                work</a>
+        </section>
+
+        <section class="wrap" style="padding-top:0">
+            <div class="stats">
+                <div><strong data-count="120">0</strong><span>Projects delivered</span></div>
+                <div><strong data-count="85">0</strong><span>Happy clients</span></div>
+                <div><strong data-count="9">0</strong><span>Years of experience</span></div>
+                <div><strong data-count="24">0</strong><span>Team members</span></div>
+            </div>
+        </section>
+        
+        <section class="wrap">
+            <div class="work">
+                 <h2>Recent work</h2>
+            <div>           
+                <div class="slider" aria-roledescription="carousel">
+                    <div class="track">
+                        <div class="slide s1">
+                            <h3>Harbor Logistics</h3>
+                            <p>A shipment-tracking portal that cut support calls by 40%.</p>
+                        </div>
+                        <div class="slide s2">
+                            <h3>Fieldnote Health</h3>
+                            <p>A booking app for 30 clinics, built for phones first.</p>
+                        </div>
+                        <div class="slide s3">
+                            <h3>Maple &amp; Co. Store</h3>
+                            <p>An online shop that doubled mobile checkout conversion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ctrl">
+                    <div class="dots"></div>
+                    <button class="sm-btn prev" aria-label="Previous slide">‹</button>
+                    <button class="sm-btn next" aria-label="Next slide">›</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="wrap">
+                <h2>Have a project in mind?</h2>
+                <p class="lead" style="margin:0 auto 24px">Tell us what you need. We reply within one business day.</p>
+                <a class="btn" href="contact.html">Contact us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="wrap">© 2026 Apex Solutions. Websites, apps and brands for growing businesses.</div>
+    </footer>
+    <button class="sm-btn" id="top" aria-label="Scroll to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

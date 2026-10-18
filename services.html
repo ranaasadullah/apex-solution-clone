@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Devixo Solutions designs and builds websites, apps and brands for growing businesses.">
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        try { 
+            let t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = t; 
+            } catch (e) 
+            { }
+    </script>
+    <title>Services | Apex Solutions</title>
+</head>
+
+<body>
+     <!-- Navbar Section -->
+    <header>
+        <div class="wrap navbar">
+            <a class="logo" href="index.html">APEX<b>.</b></a>
+            <nav id="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <button class="sm-btn" id="theme" aria-label="Toggle dark mode"></button>
+                <button class="sm-btn" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="wrap">
+            <h1 style="margin-top: 30px;">What we do</h1>
+            <div class="big-box">
+                <div class="grid">
+                    <div class="item">
+                    <h3>Web development</h3>
+                    <p>Business sites, web apps and dashboards built with modern HTML, CSS and JavaScript.</p>
+                </div>
+                <div class="item">
+                    <h3>Mobile apps</h3>
+                    <p>Cross-platform apps for iOS and Android, from prototype to store release.</p>
+                </div>
+                <div class="item">
+                    <h3>UI/UX design</h3>
+                    <p>Research, wireframes and visual design tested with real users.</p>
+                </div>
+                <div class="item">
+                    <h3>Support &amp; maintenance</h3>
+                    <p>Hosting, updates, monitoring and fixes after launch.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+
+        <section class="wrap">
+            <div class="work">
+                <h2>Frequently asked questions</h2>
+            </div>
+            <div class="faq">
+                <button aria-expanded="false">How long does a typical website take?</button>
+                <div class="a">
+                    <p>Most business sites launch in 4 to 6 weeks, depending on content and features.</p>
+                </div>
+                <button aria-expanded="false">Do you work with small budgets?</button>
+                <div class="a">
+                    <p>Yes. We scope a focused first version and add features as your business grows.</p>
+                </div>
+                <button aria-expanded="false">Will I be able to edit the site myself?</button>
+                <div class="a">
+                    <p>Yes. We set up easy editing and give your team a short training session.</p>
+                </div>
+                <button aria-expanded="false">Do you offer support after launch?</button>
+                <div class="a">
+                    <p>We offer monthly plans for hosting, updates and fixes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br><br><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="wrap">© 2026 Apex Solutions. Websites, apps and brands for growing businesses.</div>
+    </footer>
+    <button class="sm-btn" id="top" aria-label="Scroll to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

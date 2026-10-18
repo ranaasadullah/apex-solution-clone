@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Devixo Solutions designs and builds websites, apps and brands for growing businesses.">
+    <link rel="icon" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        try { 
+            let t = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
+            document.documentElement.dataset.theme = t; 
+            } catch (e) 
+            { }
+    </script>
+    <title>Portfolio | Apex Solutions</title>
+</head>
+
+<body>
+     <!-- Navbar Section -->
+    <header>
+        <div class="wrap navbar"><a class="logo" href="index.html">APEX<b>.</b></a>
+            <nav id="nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <button class="sm-btn" id="theme" aria-label="Toggle dark mode"></button>
+                <button class="sm-btn" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="wrap">
+            <div class="work">
+                <h1 style="margin-top: 10px;">Selected work</h1>
+                <p >A few recent projects across logistics, health and retail.</p>
+            </div>
+            <br>
+            <div class="portfolio-grid">
+                <div class="tile">
+                    <img src="assets/img1.jpg" alt="Harbor Logistics">
+                    <div>
+                        <h3>Harbor Logistics</h3>
+                        <p>Shipment-tracking portal. Web app.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="assets/img2.jpg" alt="Fieldnote Health">
+                    <div>
+                        <h3>Fieldnote Health</h3>
+                        <p>Clinic booking. Mobile app.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="assets/img3.jpg" alt="Maple & Co.">
+                    <div>
+                        <h3>Maple &amp; Co.</h3>
+                        <p>Online store. E-commerce.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="assets/img4.jpg" alt="Lumen Learning">
+                    <div>
+                        <h3>Lumen Learning</h3>
+                        <p>Course platform. Web app.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="assets/img5.jpg" alt="Grain & Grind">
+                    <div>
+                        <h3>Grain &amp; Grind</h3>
+                        <p>Cafe brand and website.</p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="assets/img6.jpg" alt="Northwind Realty">
+                    <div>
+                        <h3>Northwind Realty</h3>
+                        <p>Property listings. Website.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br><br><br>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="wrap">© 2026 Apex Solutions. Websites, apps and brands for growing businesses.</div>
+    </footer>
+    <button class="sm-btn" id="top" aria-label="Scroll to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
